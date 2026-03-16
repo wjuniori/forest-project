@@ -280,7 +280,7 @@
               <p class="text-xl">Agosto 2049</p>
             </div>
             <p class="text-gray-300 text-balance">
-              Melhor período para observação da Chuva de Meteoros, o céu estará
+              Melhor período para observação da Chuva de Meteoros. O céu estará
               iluminado pelas estrelas.
             </p>
             <a href="#contato" class="justify-self-start self-end btn"
@@ -409,7 +409,7 @@
           </div>
           <h3 class="font-serif text-2xl text-white">Meio-dia</h3>
           <p class="text-gray-400">
-            Explore nossas trilhas sombreadas e desfrute de um pequenique
+            Explore nossas trilhas sombreadas e desfrute de um piquenique
             gourmet na natureza.
           </p>
           <span class="text-verde-300">12:00 - 14:00</span>
@@ -496,7 +496,9 @@
             type="text"
           ></textarea>
         </div>
-        <button class="place-self-start btn">Enviar Email</button>
+        <button class="place-self-start btn cursor-pointer">
+          Enviar Email
+        </button>
       </form>
     </section>
 
@@ -555,7 +557,7 @@
       const dia = document.getElementById('dia');
 
       const random = Math.floor(Math.random() * 10) + 20;
-      temperatura.innerHTML = `${random}º`;
+      temperatura.innerText = `${random}º`;
       tempo.innerText = random < 25 ? `🌧️ ${random + 5}%` : `🌤️`;
 
       const date = new Date();
@@ -576,8 +578,8 @@
       });
 
       mobileMenu.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
-        mobileMenu.classList.toggle('flex');
+        mobileMenu.classList.add('hidden');
+        mobileMenu.classList.remove('flex');
       });
     </script>
   </body>
